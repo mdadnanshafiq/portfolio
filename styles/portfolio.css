@@ -24,7 +24,7 @@ body {
     padding: 15px 35px;
 }
 
-.primary-btn i{
+.primary-btn i {
     padding-right: 10px;
 }
 
@@ -268,15 +268,15 @@ footer {
     padding: 130px 230px;
     margin-top: 115px;
     gap: 120px;
-    
+
 }
 
 .footer-column {
     width: 50%;
-    
+
 }
 
-footer .section-title{
+footer .section-title {
     text-align: left;
 }
 
@@ -297,7 +297,8 @@ footer .section-describe {
 
 }
 
-.contact input[type="text"],input[type="email"],
+.contact input[type="text"],
+input[type="email"],
 textarea {
     display: block;
     margin-bottom: 24px;
@@ -312,3 +313,174 @@ textarea {
     width: 100%;
 }
 
+/* media query */
+
+@media screen and (max-width: 576px) {
+
+    .banner, .skills-container, nav > ul,
+    .resume-container,
+    .about-info-container,
+    nav {
+        flex-direction: column;
+    }
+
+    .skill .section-describe,
+    .resume-container,
+    .about {
+        padding: 10px;
+    }
+
+
+    footer {
+        flex-direction: column;
+        padding: 15px 25px;
+    }
+
+    .footer-column {
+        width: 90%;
+    }
+
+    footer>.footer-column>* {
+        display: block;
+        text-align: center;
+    }
+
+
+    .contact input[type="text"],
+    input[type="email"],
+    textarea {
+        margin-bottom: 10px;
+        width: 90%;
+    }
+
+    .header {
+        background-image: none;
+    }
+
+    .banner {
+        padding: 0 20px;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
+
+    .banner-content > .primary-btn {
+        margin:  10px 100px;
+
+    }
+
+    .dp {
+        width: 100%;
+        height: auto;
+    }
+
+
+    nav > ul > li, .nav-title{
+        margin: 10px auto;
+    }
+
+    nav > ul{
+        padding: 0;
+    }
+
+    nav{
+        margin: auto;
+    }
+
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 960px) {
+
+    .skills-container, nav > ul, nav,
+    .about-info-container, .banner {
+        flex-direction: column;
+    }
+
+    .skill .section-describe,
+    .about {
+        padding: 10px;
+    }
+
+    .resume-container {
+        gap: 30px;
+        width: 100%;
+    }
+
+    .resume-column {
+        margin: auto 20px;
+    }
+
+    .resume-column hr {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 15px 25px;
+    }
+
+    .footer-column {
+        width: 90%;
+        margin: auto;
+    }
+
+    footer>.footer-column>* {
+        display: block;
+        text-align: center;
+    }
+
+    .contact input[type="text"],
+    input[type="email"],
+    textarea {
+        margin-bottom: 10px;
+        width: 90%;
+    }
+
+    .header {
+        background-image: none;
+    }
+
+    .banner {
+        padding: 0 20px;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+
+    }
+
+    .banner-content > *{
+        text-align: center;
+        margin: auto;
+    }
+
+    .banner-content > .primary-btn {
+        margin:  10px 100px;
+
+    }
+
+    .dp {
+        width: 100%;
+        height: auto;
+    }
+
+    nav > ul > li, .nav-title{
+        margin: 10px auto;
+    }
+
+    nav > ul{
+        padding: 0;
+    }
+
+    nav{
+        margin: auto;
+    }
+}
